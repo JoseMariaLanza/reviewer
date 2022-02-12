@@ -1,0 +1,25 @@
+.fa {
+    color: #CB134A;
+    /* font-size: 20px; */
+    font-size: 1.1em;
+}
+
+/* .navbar__hidden .fa-times {
+    visibility: hidden;
+} */
+
+.search__form .search__text {
+    display: flex;
+    width: 100%;
+}
+
+.search__form .fa-times {
+    visibility: visible;
+    font-size: 16px;
+    color: black;
+    /* float: right; */
+}
+
+.search__form .fa-times:hover {
+    cursor: pointer;
+}

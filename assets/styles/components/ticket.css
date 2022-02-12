@@ -1,0 +1,117 @@
+/* .episodes {
+    width: 100%;
+    height: auto;
+}
+
+.episodes__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    margin-bottom: 8px;
+    border-bottom: solid rgba(91, 91, 92, 0.5) 2px;
+}
+
+.episodes__title {
+    color: white;
+}
+
+.episodes__see-more a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.episodes__see-more i {
+    margin-right: 16px;
+}
+
+.episodes__see-more a:hover {
+    color: #CB134A;
+    transition: all .3s;
+} */
+
+.tickets {
+    display: flex;
+    width: 100%;
+}
+
+.tickets__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ticket {
+    list-style: none;
+    width: calc(50% - 0.5em);
+    margin-top: 10px;
+    border-radius: 8px;
+    background: rgb(36, 35, 35);
+    border-bottom: 4px solid black;
+}
+
+.ticket:hover {
+    border-bottom: 4px solid #CB134A;
+    background-color: rgb(63, 62, 62);
+    transition: all .5s;
+}
+
+.ticket:hover .fa-play-circle::before {
+    color: #CB134A;
+    transition: all .5s;
+}
+
+.ticket a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.ticket__header {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.ticket__number {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    color: #CB134A;
+    font-size: 0.7em;
+}
+
+.ticket__title {
+    font-size: 0.7em;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 15px;
+}
+
+.ticket__div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket__year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    color: rgb(121, 119, 119);
+}
+
+.fa-play-circle {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    color: rgb(66, 65, 65);
+}
+
+
+

@@ -1,0 +1,73 @@
+.card {
+    list-style-type: none;
+    font-size: 12px;
+    width: calc(50% - 0.5em);
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+.card:hover {
+    background-color: rgb(0, 0, 0, 0.0);
+}
+.card__figure--image:hover {
+    opacity: 0.2;
+    transition: all 0.4s;
+}
+
+.card > a {
+    text-decoration: none;
+    color: white;
+}
+
+.card__figure {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card__figure--image {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.card__figure--year {
+    display: flex;
+    font-size: 0.8em;
+    background-color: rgba(48, 48, 48, 0.8);
+    opacity: 0.8;
+    margin: 1em;
+    padding: 0.3em 0.7em;
+    justify-content: center;
+    align-items: center;
+    border: white 1px solid;
+    border-radius: 3px;
+    position: absolute;
+}
+
+.card__header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.card__title {
+    font-size: 0.8em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    max-width: calc(50vw - 2em);
+}
+
+.card__assessment {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #CB134A;
+}
+
+.card__assessment > span {
+    font-size: 1em;
+    font-weight: bold;
+    color: white
+}

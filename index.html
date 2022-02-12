@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- FONTS AWESOME -->
+    <script src="https://use.fontawesome.com/8d99a7dfdd.js"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/static/fontIcons.css">
+    <link rel="stylesheet" href="./assets/styles/home.css">
+    <link rel="stylesheet" href="./assets/styles/components/card.css">
+    <link rel="stylesheet" href="./assets/styles/components/ticket.css">
+    <link rel="stylesheet" href="./assets/styles/components/hidden-menu.css">
+    <!-- OTHERS -->
+    <link rel="icon" type="image/png" href="./assets/static/images/favicon.png">
+    <title>Cuevana clone</title>
+</head>
+
+<body>
+    <div class="navbar__hidden" id="menu" hidden>
+        <i class="fa fa-times" aria-hidden="true" onclick="closeNavbar()"></i>
+        <ul class="navbar__list">
+            <a href=""><li>Inicio</li></a>
+            <a href=""><li>Peliculas</li></a>
+            <a href=""><li>Series</li></a>
+            <a href=""><li>Temporadas</li></a>
+            <a href=""><li>Episodios</li></a>
+            <a href="./docs/index.html"><li>Documentación</li></a>
+        </ul>
+    </div>
+    <div class="container">
+        <header class="header">
+            <i class="fa fa-bars" onclick="openNavbar()"></i>
+        </header>
+
+        <div class="main">
+            <div class="main__container">
+
+                <div class="search__form">
+                    <form action="javascritp:;">
+                        <input type="text" name="search" id="" class="search__text">
+                        <i class="fa fa-times" onclick="" aria-hidden="false"></i>
+                    </form>
+                </div>
+
+                <section class="section">
+                    <header class="section__header">
+                        <div class="header__section-row">
+                            <h1 class="section__title">Peliculas</h1>
+                            <div class="section__see-more">
+                                <!--typo fixed-->
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="section__most-recent">
+                            <a href="#">MAS RECIENTES</a>
+                        </div>
+                    </header>
+
+
+                    <div class="cards">
+                        <ul class="cards__list" id="moviesContainer">
+                            <!-- MOVIE LIST -->
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section class="section">
+                    <!-- <form action="javascript:homeController.getPremiere(premiereYear.value);">
+                        <input type="text" id="premiereYear">
+                        <button type="submit">ejecutar index</button> -->
+                    </form>
+
+                    <header class="section__header">
+                        <div class="header__section-row">
+                            <h1 class="section__title">Episodios</h1>
+                            <div class="section__see-more">
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="section__episodes"></div>
+                    </header>
+
+                    <div class="tickets">
+                        <ul class="tickets__list" id="episodesContainer">
+                            <!-- EPISODES LIST-->
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section class="section">
+                    <header class="section__header">
+                        <div class="header__section-row">
+                            <h1 class="section__title">Series</h1>
+                            <div class="section__see-more">
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="section__most-recent">
+                            <a href="#">MAS RECIENTES</a>
+                        </div>
+                    </header>
+
+
+                    <div class="cards">
+                        <ul class="cards__list" id="seriesContainer">
+                            <!-- SERIE LIST -->
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section class="section">
+                    <header class="section__header">
+                        <div class="header__section-row">
+                            <h1 class="section__title">Temporadas</h1>
+                            <div class="section__see-more">
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Ver más</a>
+                            </div>
+                        </div>
+
+                        <div class="section__most-recent">
+                            <a href="#">MAS RECIENTES</a>
+                        </div>
+                    </header>
+
+
+                    <div class="cards">
+                        <ul class="cards__list" id="seasonsContainer">
+                            <!-- SEASON LIST -->
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section class="section__explore">
+                    <div class="popular">
+
+                    </div>
+                    <div class="premiere">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom__container">
+        <div class="bottom__info">
+            <article class="page-info">
+                <h1>Re Viewer</h1>
+                <h2>PELÍCULAS Y SERIES</h2>
+                <p>
+                    Consulta lo último en películas y series
+                </p>
+                <p>
+                    Informate sobre la película o serie que más te guste.
+                </p>
+                <p>
+                    Objetivo de este sitio: Es demostrar que se puede construir una aplicación bien estructurada sólo con Html, Css y Javascript vanilla.
+                </p>
+            </article>
+
+            <footer>
+                <div class="logo__container">
+                    <img src="./assets/static/images/logo.png">
+                </div>
+                <div class="info__container">
+                    <p>Re Viewer © 2020</p>
+                    <p><a href="./docs/index.html">José María Lanza, Gabriel Augusto Rotger</a></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/scripts/hidden-menu.js"></script>
+    <script src="./persistence/repository.js"></script>
+    <script src="./js/components.js"></script>
+    <script src="./controllers/HomeController.js"></script>
+</body>
+
+</html>
